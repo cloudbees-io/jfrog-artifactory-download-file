@@ -29,7 +29,7 @@ runs:
   steps:
     - id: run-jfrog-download-action
       name: run-jfrog-download-action
-      uses: docker://public.ecr.aws/l7o7z1g8/actions/jfrog-actions:main-6fd28fb7843147f71ef3e0743f5755473c7e4942
+      uses: docker://public.ecr.aws/l7o7z1g8/actions/jfrog-actions:main-7b49cb1e4dee9a4a2db3f8c020997ebf2957968e
       shell: sh
       env:
         CONFIG_JSON: '{"metaInfo":{"srcType":"download","url":"${{ inputs.url }}","username":"${{ inputs.username }}","password":"${{ inputs.password }}","token":"${{ inputs.token }}","artifactoryPath":"${{ inputs.artifactory-path }}","filePath":"${{ inputs.file-path }}"}}'
